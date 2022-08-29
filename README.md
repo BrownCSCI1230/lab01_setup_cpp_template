@@ -1,2 +1,2 @@
 # Lab 1: Setup & C++
-This is a placeholder readme.
+Welcome to the Lab 1 Setup & C++! The handout for the lab is located [here](https://browncsci1230.github.io/labs/lab1).
