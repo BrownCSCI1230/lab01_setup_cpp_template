@@ -68,8 +68,8 @@ int main() {
     // auto y = std::string{ "abcd" };
     // inplaceTimesTwo(&x);
     // inplaceTimesTwo(&y);
-    // std::cout << x; // you should see 42 here
-    // std::cout << y; // you should see "abcdabcd" here
+    // std::cout << x << std::endl; // you should see 42 here
+    // std::cout << y << std::endl; // you should see "abcdabcd" here
 
     // task10: pass different std::array and std::vector objects to doubleEachElement
     //        print the results after doubleEachElement calls
