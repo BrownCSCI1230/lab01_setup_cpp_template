@@ -3,7 +3,6 @@
 #include <array>
 #include <vector>
 #include <tuple>
-#include <concepts>
 
 // task 3, task 4: timesTwo() here
 
@@ -33,13 +32,13 @@ void printShape(auto shape) {
     // Your code here
 }
 
-// task 8:
-void doubleEachElement(/* ??? container */) {
+// task 9:
+void inplaceTimesTwo(/* ??? pointerToSomeVariable */) {
     // your code here
 }
 
-// task 11, task 12:
-void printEachObject(auto* pointerToTheFirstObject, std::size_t numberOfObjects) {
+// task 10:
+void doubleEachElement(/* ??? container */) {
     // your code here
 }
 
@@ -62,21 +61,16 @@ int main() {
     // task7: call printShape with different Rectangle and Circle objects
 
     // task8: create a container of strings, fill the container with some strings
-    //        repeat each string element in the container, print each string element in the container
+    //        apply timesTwo to each string element in the container, print each string element in the container
 
     // task9
-    // auto x = 42;
-    // auto px = &x;
-    // auto ppx = &px;
-    // static_assert(std::same_as<decltype(*ppx), /* type of *ppx here */>);
-    // static_assert(std::same_as<decltype(**ppx), /* type of **ppx here */>);
+    // auto x = 21;
+    // auto y = std::string{ "abcd" };
+    // inplaceTimesTwo(&x);
+    // inplaceTimesTwo(&y);
+    // std::cout << x; // you should see 42 here
+    // std::cout << y; // you should see "abcdabcd" here
 
     // task10: pass different std::array and std::vector objects to doubleEachElement
     //        print the results after doubleEachElement calls
-
-    // task11:
-    // auto v1 = std::vector{ "aaa", "bbb", "ccc", "hello" };
-    // auto v2 = std::array{ 7, 8, 9, 10, 11 };
-    // printEachObject(v1.data(), v1.size());
-    // printEachObject(v2.data(), v2.size());
 }
