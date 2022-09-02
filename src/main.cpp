@@ -8,8 +8,8 @@
 // Task 3, Task 4: timesTwo() here
 
 struct Rectangle {
-    double length; // data member, also known as a field
-    double width = 1; // field can have a default value
+    double length; // Data member, also known as a field
+    double width = 1; // Field can have a default value
     // Fields must be explicitly typed, you cannot use type deduction here
 
     // Member function, also known as a method
@@ -35,12 +35,12 @@ void printShape(auto shape) {
 
 // Task 9:
 void inplaceTimesTwo(/* ??? pointerToSomeVariable */) {
-    // your code here
+    // Your code here
 }
 
 // Task 10:
 void doubleEachElement(/* ??? container */) {
-    // your code here
+    // Your code here
 }
 
 int main() {
@@ -58,7 +58,7 @@ int main() {
     // std::cout << Rectangle{ 7, 8 }.calculatePerimeter() << std::endl;
 
     // Task 6: create a few instances of Circle, and call their member functions
-    // tip: to use pi, use std::numbers::pi
+    // Tip: to use pi, use std::numbers::pi
 
     // Task 7: call printShape with different Rectangle and Circle objects
 

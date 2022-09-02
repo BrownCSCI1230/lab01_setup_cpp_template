@@ -12,7 +12,10 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Allows you to include files from within those directories, without prefixing their filepaths
+include_directories(src)
+
 # Specifies .cpp and .h files to be passed to the compiler
 add_executable(${PROJECT_NAME}
-  main.cpp
+  src/main.cpp
 )
