@@ -43,12 +43,12 @@ void doubleEachElement(/* ??? container */) {
     // Your code here
 }
 
-// Task 11, 12:
+// Task 11-14:
 std::vector<float> generateSequence(int n) {
     std::vector<float> sequence(n);
     auto temp = 0;
     for (int i = 0; i < n; i++) {
-        temp = 1.0/(i+1);
+        temp = 1.0/(i+1); // 1, 1/2, 1/3, ...
         sequence[i] = temp;
     }
     return sequence;
