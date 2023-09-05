@@ -1,4 +1,3 @@
-#include <iostream>
 #include <string>
 #include <array>
 #include <vector>
@@ -43,6 +42,27 @@ void doubleEachElement(/* ??? container */) {
     // Your code here
 }
 
+// Task 11-14:
+std::vector<float> generateSequence(int n) {
+    std::vector<float> sequence(n);
+    auto temp = 0;
+    for (int i = 0; i < n; i++) {
+        temp = 1.0/(i+1); // 1, 1/2, 1/3, ...
+        sequence[i] = temp;
+    }
+    return sequence;
+}
+void verifySequence(std::vector<float>& seq) {
+    // DO NOT TOUCH this function
+    for (int i=0; i < seq.size(); i++) {
+        if (std::abs(seq[i] -  1.0/(i+1)) > 1e-3) {
+            std::cerr << "Output sequence is incorrect! It should be (1, 1/2, 1/3, ..., 1/n)" << std::endl;
+            return;
+        }
+    }
+    std::cout << "Output sequence is correct! Congrats on finishing the lab!" << std::endl;
+}
+
 int main() {
     // Task 2: write "Hello World!" in an std::cout << "" << std::endl; call
 
@@ -75,4 +95,8 @@ int main() {
 
     // Task 10: pass different std::array and std::vector objects to doubleEachElement
     //          print the results after doubleEachElement calls
+
+    // Task 11:
+    // std::vector<float> sequence = generateSequence(5);
+    // verifySequence(sequence);
 }
